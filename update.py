@@ -1,4 +1,28 @@
+import os
 import json
+import time
+import datetime
+
+def last_modified(path):
+
+    date = os.path.getmtime(path)
+    date = datetime.datetime.fromtimestamp(date)
+    return time.mktime(date.timetuple())
+
+def update_timestamp():
+
+    with open("timestamp.data", "r+") as file:
+
+        old = float(file.read())
+
+        now = datetime.datetime.now()
+        now = time.mktime(now.timetuple())
+
+        file.seek(0)
+        file.write(str(now))
+        file.truncate()
+
+        return old
 
 def parse(source):
 
@@ -46,12 +70,23 @@ def parse(source):
 
     return [ subparse(block) for block in blockify(source) ]
 
-for surah in range(1, 115):
+def update_files():
 
-    with open("source/surah{}.text".format(surah)) as source_file:
+    last_update = update_timestamp()
 
-        with open("data/surah{}.json".format(surah), "w") as output_file:
+    for surah in range(1, 115):
 
-            data = parse(source_file.read())
-            data = json.dumps(data)
-            output_file.write(data)
+        source_path = "source/surah{}.text".format(surah)
+
+        if last_modified(source_path) > last_update:
+
+            if __name__ == "__main__": print "Rebuilding Surah: ", surah
+
+            with open(source_path) as source_file:
+
+                with open("json/surah{}.json".format(surah), "w") as json_file:
+
+                    data = parse(source_file.read())
+                    json_file.write(json.dumps(data))
+
+if __name__ == "__main__": update_files()
