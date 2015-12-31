@@ -12,15 +12,9 @@ The aim of this project is to:
 - Format the source so it is easy to automatically parse the translation.
 - Make the translation available as JSON AST files. Other people can then use
   them to generate pretty webpages, apps, ebooks etc.
-
-To improve the readability of the translation, we will use paragraphs and
-ignore indexing. Indexing is retained in the source code, but the English
-is written so that the indexing could be hided by software, and the text
-will flow as natural English, in paragraphs. Software can use the JSON
-AST files to generate ebooks with or without indexing, and apps can
-allow the user to toggle indexing on and off. It will be nice to
-be able to read a translation of the Quran without the message
-being broken into verses which were not in the revelation.
+- Improve readability by using paragraphs and ignoring indexing in the English
+  (though indexing will be retained in the source and ASTs to make it optional
+  for end users).
 
 The contents of the repo are in the public domain.
 
