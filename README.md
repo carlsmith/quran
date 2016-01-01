@@ -12,13 +12,14 @@ modern translations of the Quran. This repo includes:
 ## Status
 
 The project is just getting started. There is plenty that people can help
-with, but nothing is ready to start using properly yet. Open an issue if
-you want to introduce yourself. Treat the issue tracker as a forum.
+with, but nothing is ready to start using properly yet. If you would like
+to get involved at all, there is [an open issue][1] for people to use to
+introduce themselves.
 
-The software will generate a pretty HTML version of the translation every
-time `update.py` is executed. However, until each surah is divided into
-paragraphs, they render as walls of text. Adding paragraphs is the most
-important thing to get done at the moment.
+The software in this repo will generate a pretty HTML version of the
+translation every time `update.py` is executed. However, until a surah
+is divided into paragraphs, it will render as a wall of text. Adding
+paragraphs is the most important thing to get done at the moment.
 
 Once the surahs have been divided into paragraphs, the most pressing issue
 will be improving the software that generates HTML editions. From there on
@@ -28,7 +29,7 @@ in, everything should be fairly optional and can be worked on as and when.
 
 The Quran translation used in this project is derived from *The Message*, an
 original translation that was developed by a community of Islamic reformists
-based at [free-minds.org][1]. Layth Saleh al-Shaiban led the translation.
+based at [free-minds.org][2]. Layth Saleh al-Shaiban led the translation.
 
 ## The Project
 
@@ -42,4 +43,5 @@ The aim of this project is to:
   (indexing is kept in the source and ASTs to make it optional for readers).
 - Bring people together.
 
-[1]: http://www.free-minds.org
+[1]: https://github.com/carlsmith/quran/issues/1
+[2]: http://www.free-minds.org
