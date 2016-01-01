@@ -5,7 +5,6 @@ modern translations of the Quran. This repo includes:
 
 - A modern translation of the Quran, formatted
   to make it easy to maintain, and easy to parse.
-- Permissive licensing for the translation and software.
 - Software for parsing the source files into JSON AST files.
 - Software for generating editions of the translation in various
   formats, like HTML, EPUB and PDF.
