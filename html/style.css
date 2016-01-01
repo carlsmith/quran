@@ -1,0 +1,25 @@
+body {
+    background: #F7F7F7;
+}
+main {
+    color: #252525;
+    font-size: 26px;
+    text-align: center;
+    font-style: italic;
+    font-family: Palatino, URWPalladioL, Times New Roman, Serif;
+    line-height: 40px;
+    max-width: 980px;
+    margin: 40px auto;
+}
+section {
+    background: #FFF;
+    padding: 38px 96px;
+    margin-bottom: 32px;
+    border: 1px solid #CCC;
+    border-top: 1px solid #DDD;
+    border-bottom: 1px solid #BBB;
+    box-shadow: 0 10px 26px -10px #999;
+}
+span:hover {
+    background: rgba(0, 178, 255, 0.35);
+}

@@ -70,7 +70,7 @@ def parse(source):
 
     return [ subparse(block) for block in blockify(source) ]
 
-def update_files():
+def update_json():
 
     last_update = update_timestamp()
 
@@ -89,4 +89,9 @@ def update_files():
                     data = parse(source_file.read())
                     json_file.write(json.dumps(data))
 
-if __name__ == "__main__": update_files()
+if __name__ == "__main__":
+
+    from html import book
+
+    update_json()
+    book.generate()
