@@ -1,7 +1,7 @@
 # The Open Quran
 
-*The Open Quran* project develops open source resources for publishing
-modern translations of the Quran. This repo includes:
+*The Open Quran Project* develops open source resources for publishing
+digital editions of a modern translation of the Quran. This repo includes:
 
 - A modern translation of the Quran, formatted
   to make it easy to maintain, and easy to parse.
@@ -13,17 +13,25 @@ modern translations of the Quran. This repo includes:
 
 The project is just getting started. There is plenty that people can help
 with, but nothing is ready to start using properly yet. If you would like
-to get involved at all, there is [an open issue][1] for people to use to
-introduce themselves.
+to get involved, there is [an open issue][1] for people to introduce
+themselves.
 
-The software in this repo will generate a pretty HTML version of the
-translation every time `update.py` is executed. However, until a surah
-is divided into paragraphs, it will render as a wall of text. Adding
-paragraphs is the most important thing to get done at the moment.
+The software in this repo will generate a HTML version of the translation
+every time `update.py` is executed. However, until a surah is divided into
+paragraphs, it will render as a wall of text. Adding paragraphs is the most
+important thing to get done at the moment.
 
 Once the surahs have been divided into paragraphs, the most pressing issue
 will be improving the software that generates HTML editions. From there on
 in, everything should be fairly optional and can be worked on as and when.
+
+## Edition Zero
+
+The HTML generator is currently only use internally to pretty print the
+translation to check everything is working correctly, and to make it
+easier to read the text. We host [a copy of the latest version][3]
+online. Once the translation is ready for publication, the HTML
+edition will be moved to its own domain.
 
 ## Translation
 
@@ -45,3 +53,5 @@ The aim of this project is to:
 
 [1]: https://github.com/carlsmith/quran/issues/1
 [2]: http://www.free-minds.org
+[3]: http://carlsmith.github.io/quran/
+

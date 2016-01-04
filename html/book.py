@@ -11,6 +11,7 @@ def make_template():
 def generate(template=None, output_path="html/book.html"):
 
     main = ["<main>"]
+    push = main.append
     span = '<span title="Surah {1}, Verse {2}">{0}</span>'
 
     if not template: template = make_template()
@@ -20,21 +21,21 @@ def generate(template=None, output_path="html/book.html"):
         path = os.path.join("json/surah{}.json".format(index))
         with open(path) as file: data = json.loads(file.read())
 
-        main.append('<section id="surah{}">'.format(index))
+        push('<section id="surah{}">'.format(index))
 
         for paragraph in data:
 
-            main.append("<p>")
+            push("<p>")
 
-            for verse in paragraph: main.append(span.format(
-                verse["quran"], verse["surah"], verse["verse"]
-                ))
+            for line in paragraph:
+                
+                push(span.format(line["quran"], line["surah"], line["verse"]))
 
-            main.append("</p>")
+            push("</p>")
 
-        main.append("</section>")
+        push("</section>")
 
-    main.append("</main>")
+    push("</main>")
 
     document = template.replace("<document>", "\n".join(main))
 
