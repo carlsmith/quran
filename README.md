@@ -27,8 +27,8 @@ in, everything should be fairly optional and can be worked on as and when.
 
 ## Edition Zero
 
-The HTML generator is currently only use internally to pretty print the
-translation to check everything is working correctly, and to make it
+The HTML generator is currently only used internally to pretty print the
+translation, to check everything is working correctly, and to make it
 easier to read the text. We host [a copy of the latest version][3]
 online. Once the translation is ready for publication, the HTML
 edition will be moved to its own domain.
