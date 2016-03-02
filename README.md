@@ -101,6 +101,6 @@ Do not forget to [say hello][1].
 
 [1]: https://github.com/carlsmith/quran/issues/1
 [2]: http://www.free-minds.org
-[3]: http://carlsmith.github.io/quran
+[3]: http://carlsmith.github.io/Quran
 [4]: http://www.free-minds.org/quran
 [5]: https://github.com/carlsmith/quran/blob/master/source/surah1.text
