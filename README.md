@@ -16,7 +16,7 @@ This repo currently includes:
 Only roughly twenty verses are ready to read, and are at the very end (bottom)
 of the HTML file.
 
-This translation is based on previous work by the [Free Minds Community[1],
+This translation is based on previous work by the [Free Minds Community][1],
 and we are especially indebted to their lead translator Layth, who has led
 translation efforts in our community for many years.
 
